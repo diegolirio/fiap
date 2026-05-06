@@ -31,7 +31,8 @@ No "Score híbrido de credito" (PF+PJ), com consentimento do empreendedor, utili
 - **Setor de saúde resiliente**: faturamento cresce mesmo em crises; profissionais de saúde têm renda previsível — bom risco de crédito subavaliaodo pelo mercado
 
 #### Social / Demográfico
-- **6 milhões de profissionais de saúde** no Brasil (médicos, dentistas, enfermeiros, psicólogos, fisioterapeutas)
+- **6 milhões de profissionais de saúde** no Brasil (médicos, dentistas, enfermeiros, psicólogos, fisioterapeutas, biomédicos)
+- **Biomedicina estética em alta**: mercado de estética avançada cresce ~15% ao ano no Brasil; biomédicos habilitados para aplicar toxina botulínica, preenchedores e lasers — faturamento alto, pago majoritariamente à vista/particular, sem convênio → renda invisível para bancos tradicionais; precisam de crédito para equipamentos (laser, ultrassom) que custam R$30k–R$150k
 - **80% dos médicos brasileiros são PJ** — obrigados a abrir CNPJ por conta de convênios e hospitais
 - **Médico jovem endividado**: residência médica paga ~R$4k/mês; ao sair, precisa montar consultório com capital limitado e sem histórico PJ
 - **Feminização da medicina**: >50% dos novos médicos são mulheres — público que historicamente tem mais dificuldade com crédito
