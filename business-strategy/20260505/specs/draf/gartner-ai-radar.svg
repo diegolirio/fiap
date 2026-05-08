@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 750" width="1100" height="750">
+  <defs>
+    <!-- Gradients for quadrants -->
+    <radialGradient id="radarGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  style="stop-color:#e0f2fe;stop-opacity:1"/>
+      <stop offset="45%" style="stop-color:#bae6fd;stop-opacity:1"/>
+      <stop offset="80%" style="stop-color:#38bdf8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1"/>
+    </radialGradient>
+    <radialGradient id="innerGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  style="stop-color:#f0fdf4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#bbf7d0;stop-opacity:1"/>
+    </radialGradient>
+    <clipPath id="clipCircle">
+      <circle cx="550" cy="390" r="240"/>
+    </clipPath>
+    <clipPath id="clipTL">
+      <path d="M550,390 L310,150 A240,240 0 0,1 550,150 Z"/>
+    </clipPath>
+    <!-- Background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f1f5f9;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="750" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="550" y="48" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="800" fill="#0f172a" text-anchor="middle">Radar de Ambição de IA da Gartner</text>
+  <text x="550" y="72" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="400" fill="#64748b" text-anchor="middle">Hibryd · Arquétipo: AI First / Everywhere</text>
+
+  <!-- === RADAR CIRCLE === -->
+  <!-- Outer ring (dark blue) -->
+  <circle cx="550" cy="390" r="240" fill="#0ea5e9" opacity="0.15" stroke="#0ea5e9" stroke-width="2"/>
+
+  <!-- Middle ring -->
+  <circle cx="550" cy="390" r="170" fill="#38bdf8" opacity="0.12" stroke="#38bdf8" stroke-width="1.5"/>
+
+  <!-- Inner ring -->
+  <circle cx="550" cy="390" r="100" fill="#7dd3fc" opacity="0.2" stroke="#7dd3fc" stroke-width="1.5"/>
+
+  <!-- Core circle -->
+  <circle cx="550" cy="390" r="42" fill="#0284c7" opacity="0.25" stroke="#0284c7" stroke-width="2"/>
+
+  <!-- Quadrant dividers -->
+  <line x1="310" y1="390" x2="790" y2="390" stroke="#0369a1" stroke-width="2" opacity="0.6"/>
+  <line x1="550" y1="150" x2="550" y2="630" stroke="#0369a1" stroke-width="2" opacity="0.6"/>
+
+  <!-- === QUADRANT LABELS (inside circle, curved arc style) === -->
+
+  <!-- TOP-LEFT: Front Office -->
+  <text font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#0c4a6e" opacity="0.9">
+    <textPath href="#arcTL" startOffset="15%">Front Office</textPath>
+  </text>
+  <defs>
+    <path id="arcTL" d="M 365,265 A 165,165 0 0,1 540,230"/>
+    <path id="arcTR" d="M 560,230 A 165,165 0 0,1 735,265"/>
+    <path id="arcBL" d="M 365,515 A 165,165 0 0,0 540,550"/>
+    <path id="arcBR" d="M 560,550 A 165,165 0 0,0 735,515"/>
+  </defs>
+
+  <!-- Front Office label -->
+  <text font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#0c4a6e">
+    <textPath href="#arcTL" startOffset="8%">Front  Office</textPath>
+  </text>
+
+  <!-- Products/Services label -->
+  <text font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#0c4a6e">
+    <textPath href="#arcTR" startOffset="20%">Products / Services</textPath>
+  </text>
+
+  <!-- Back Office label -->
+  <text font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#0c4a6e">
+    <textPath href="#arcBL" startOffset="8%">Back  Office</textPath>
+  </text>
+
+  <!-- Core Capabilities label -->
+  <text font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#0c4a6e">
+    <textPath href="#arcBR" startOffset="12%">Core  Capabilities</textPath>
+  </text>
+
+  <!-- === AXIS LABELS === -->
+  <!-- Top: Cliente Externo -->
+  <text x="550" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#374151" text-anchor="middle">Voltado para o Cliente Externo</text>
+
+  <!-- Bottom: Operações Internas -->
+  <text x="550" y="648" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#374151" text-anchor="middle">Operações Internas</text>
+
+  <!-- Left indicator -->
+  <text x="130" y="388" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">IA do</text>
+  <text x="130" y="400" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Dia a Dia</text>
+
+  <!-- Right indicator -->
+  <text x="960" y="380" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">IA</text>
+  <text x="960" y="392" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Transfor-</text>
+  <text x="960" y="404" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">madora</text>
+
+  <!-- === CENTER LABEL === -->
+  <text x="550" y="383" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#0c4a6e" text-anchor="middle">AI First</text>
+  <text x="550" y="397" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#0c4a6e" text-anchor="middle">Everywhere</text>
+
+  <!-- === DOT MARKERS inside quadrants === -->
+
+  <!-- Front Office dot (top-left) — Agente IA -->
+  <circle cx="460" cy="295" r="11" fill="#0ea5e9" stroke="#fff" stroke-width="2" opacity="0.9"/>
+  <text x="460" y="299" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">FO</text>
+
+  <!-- Products/Services dot (top-right) — Score Híbrido -->
+  <circle cx="660" cy="285" r="11" fill="#0284c7" stroke="#fff" stroke-width="2" opacity="0.9"/>
+  <text x="660" y="289" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">PS</text>
+
+  <!-- Back Office dot (bottom-left) — Automação -->
+  <circle cx="450" cy="490" r="11" fill="#38bdf8" stroke="#fff" stroke-width="2" opacity="0.9"/>
+  <text x="450" y="494" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">BO</text>
+
+  <!-- Core Capabilities dot (bottom-right) — ML Motor -->
+  <circle cx="660" cy="495" r="11" fill="#0369a1" stroke="#fff" stroke-width="2" opacity="0.9"/>
+  <text x="660" y="499" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">CC</text>
+
+  <!-- === LEFT SIDE TEXT BOX: Front Office + Back Office === -->
+  <!-- Front Office description -->
+  <rect x="10" y="120" width="270" height="175" rx="10" fill="#ffffff" stroke="#bae6fd" stroke-width="1.5"/>
+  <rect x="10" y="120" width="270" height="6" rx="3" fill="#0ea5e9"/>
+
+  <text x="24" y="143" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#0c4a6e">Excelência na Experiência</text>
+  <text x="24" y="157" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#0c4a6e">do Profissional de Saúde:</text>
+
+  <circle cx="24" cy="175" r="3" fill="#0ea5e9"/>
+  <text x="34" y="179" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">Agente IA conversacional</text>
+  <text x="34" y="193" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">(WhatsApp / app)</text>
+
+  <circle cx="24" cy="208" r="3" fill="#0ea5e9"/>
+  <text x="34" y="212" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">Score explicável para o</text>
+  <text x="34" y="226" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">profissional entender e melhorar</text>
+
+  <circle cx="24" cy="240" r="3" fill="#0ea5e9"/>
+  <text x="34" y="244" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">NPS ≥ 70 · 30% melhora</text>
+  <text x="34" y="258" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">no score em 6 meses</text>
+
+  <!-- Connector line FO -->
+  <line x1="280" y1="207" x2="440" y2="290" stroke="#0ea5e9" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+
+  <!-- Back Office description -->
+  <rect x="10" y="430" width="270" height="175" rx="10" fill="#ffffff" stroke="#bae6fd" stroke-width="1.5"/>
+  <rect x="10" y="430" width="270" height="6" rx="3" fill="#38bdf8"/>
+
+  <text x="24" y="453" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#0c4a6e">Produtividade e Eficiência</text>
+  <text x="24" y="467" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#0c4a6e">nas Operações Internas:</text>
+
+  <circle cx="24" cy="485" r="3" fill="#38bdf8"/>
+  <text x="34" y="489" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">Automação de onboarding</text>
+  <text x="34" y="503" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">e consentimento Open Finance</text>
+
+  <circle cx="24" cy="518" r="3" fill="#38bdf8"/>
+  <text x="34" y="522" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">Atualização do score</text>
+  <text x="34" y="536" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">em tempo real</text>
+
+  <circle cx="24" cy="551" r="3" fill="#38bdf8"/>
+  <text x="34" y="555" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">Redução de SG&amp;A via</text>
+  <text x="34" y="569" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">automação de processos</text>
+
+  <!-- Connector line BO -->
+  <line x1="280" y1="500" x2="432" y2="490" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+
+  <!-- === RIGHT SIDE TEXT BOX: Products/Services + Core Capabilities === -->
+  <!-- Products/Services description -->
+  <rect x="820" y="120" width="270" height="190" rx="10" fill="#ffffff" stroke="#bae6fd" stroke-width="1.5"/>
+  <rect x="820" y="120" width="270" height="6" rx="3" fill="#0284c7"/>
+
+  <text x="834" y="143" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#0c4a6e">Nova Proposta de Valor —</text>
+  <text x="834" y="157" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#0c4a6e">Novo Modelo de Negócio:</text>
+
+  <circle cx="834" cy="175" r="3" fill="#0284c7"/>
+  <text x="844" y="179" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">Score híbrido PF+PJ como</text>
+  <text x="844" y="193" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">produto de IA (API B2B2C)</text>
+
+  <circle cx="834" cy="208" r="3" fill="#0284c7"/>
+  <text x="844" y="212" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">Licenciamento para fintechs</text>
+  <text x="844" y="226" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">e BaaS · SaaS médico</text>
+
+  <circle cx="834" cy="241" r="3" fill="#0284c7"/>
+  <text x="844" y="245" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">First Mover: único score que</text>
+  <text x="844" y="259" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">cruza Open Finance + saúde</text>
+
+  <circle cx="834" cy="274" r="3" fill="#0284c7"/>
+  <text x="844" y="278" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">Meta: 3M jornadas de crédito</text>
+  <text x="844" y="292" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">até 2035 · MRR R$ 500k 2028</text>
+
+  <!-- Connector line PS -->
+  <line x1="820" y1="215" x2="678" y2="290" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+
+  <!-- Core Capabilities description -->
+  <rect x="820" y="430" width="270" height="175" rx="10" fill="#ffffff" stroke="#bae6fd" stroke-width="1.5"/>
+  <rect x="820" y="430" width="270" height="6" rx="3" fill="#0369a1"/>
+
+  <text x="834" y="453" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#0c4a6e">Inovação de Capacidades</text>
+  <text x="834" y="467" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#0c4a6e">Estratégicas e Operacionais:</text>
+
+  <circle cx="834" cy="485" r="3" fill="#0369a1"/>
+  <text x="844" y="489" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">Motor ML auditável e explicável</text>
+  <text x="844" y="503" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">(LGPD + CMN 4.557)</text>
+
+  <circle cx="834" cy="518" r="3" fill="#0369a1"/>
+  <text x="844" y="522" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">Gini ≥ 0,45 vs Serasa</text>
+  <text x="844" y="536" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">Backtesting 1.000 profissionais</text>
+
+  <circle cx="834" cy="551" r="3" fill="#0369a1"/>
+  <text x="844" y="555" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">Propriedade intelectual:</text>
+  <text x="844" y="569" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#374151">Score comportamental setorial</text>
+
+  <!-- Connector line CC -->
+  <line x1="820" y1="500" x2="678" y2="495" stroke="#0369a1" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+
+  <!-- === BOTTOM: 3 AI Dimensions === -->
+  <rect x="60" y="650" width="980" height="82" rx="10" fill="#0f172a" opacity="0.04" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Dimension 1: O QUÊ -->
+  <rect x="75" y="658" width="295" height="66" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="222" y="677" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#1e40af" text-anchor="middle">O QUÊ (Opportunity)</text>
+  <text x="222" y="693" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#374151" text-anchor="middle">Crédito inclusivo para 6M de profissionais</text>
+  <text x="222" y="707" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#374151" text-anchor="middle">de saúde via dados Open Finance + ML</text>
+
+  <!-- Dimension 2: O COMO -->
+  <rect x="402" y="658" width="295" height="66" rx="8" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+  <text x="549" y="677" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#5b21b6" text-anchor="middle">O COMO (Implementation)</text>
+  <text x="549" y="693" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#374151" text-anchor="middle">Score como API (B2B2C) embutido</text>
+  <text x="549" y="707" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#374151" text-anchor="middle">em fintechs · BaaS · apps de gestão médica</text>
+
+  <!-- Dimension 3: O QUÃO LONGE -->
+  <rect x="729" y="658" width="295" height="66" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="876" y="677" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#065f46" text-anchor="middle">O QUÃO LONGE (Risk)</text>
+  <text x="876" y="693" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#374151" text-anchor="middle">IA decide o score · humano valida</text>
+  <text x="876" y="707" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#374151" text-anchor="middle">edge cases · risco regulatório monitorado</text>
+
+  <!-- Gartner source badge -->
+  <text x="1085" y="744" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">Fonte: Gartner AI Ambition Radar · Aplicado: Hibryd 2026</text>
+</svg>

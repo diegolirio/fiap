@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgSlide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2040"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#06b6d4"/>
+      <stop offset="50%"  stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="radarBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#164e63" stop-opacity="0.9"/>
+      <stop offset="60%"  stop-color="#0e7490" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.5"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="sh2">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="cardSh">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="1280" height="720" fill="url(#bgSlide)"/>
+
+  <!-- Subtle background orbs -->
+  <circle cx="100"  cy="100"  r="300" fill="#06b6d4" opacity="0.04"/>
+  <circle cx="1180" cy="620"  r="280" fill="#8b5cf6" opacity="0.05"/>
+  <circle cx="640"  cy="360"  r="500" fill="#3b82f6" opacity="0.02"/>
+
+  <!-- Grid lines (subtle) -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.03">
+    <line x1="0" y1="180" x2="1280" y2="180"/>
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="0" y1="540" x2="1280" y2="540"/>
+    <line x1="320" y1="0" x2="320" y2="720"/>
+    <line x1="640" y1="0" x2="640" y2="720"/>
+    <line x1="960" y1="0" x2="960" y2="720"/>
+  </g>
+
+  <!-- ── TOP ACCENT LINE ── -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#accentLine)"/>
+
+  <!-- ── HEADER ── -->
+  <text x="64" y="62" font-size="13" font-weight="400" fill="#94a3b8" letter-spacing="3">HIBRYD  ·  FIAP 2026  ·  AMBIÇÃO DE IA</text>
+  <line x1="64" y1="74" x2="1216" y2="74" stroke="#1e3a5f" stroke-width="1"/>
+
+  <text x="64" y="118" font-size="36" font-weight="800" fill="#f1f5f9">Radar de Ambição de IA</text>
+  <text x="64" y="148" font-size="20" font-weight="300" fill="#64748b">Arquétipo escolhido: <tspan font-weight="700" fill="#06b6d4">AI First / Everywhere</tspan></text>
+
+  <!-- ── RADAR CIRCLE (center 340, 410, r=220) ── -->
+  <!-- Glow ring -->
+  <circle cx="340" cy="415" r="224" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.3" filter="url(#glow)"/>
+
+  <!-- Quadrant fills -->
+  <circle cx="340" cy="415" r="220" fill="#0c2a3a"/>
+  <path d="M340,415 L340,195 A220,220 0 0,0 120,415 Z"  fill="#0e4f5e" opacity="0.9"/>
+  <path d="M340,415 L340,195 A220,220 0 0,1 560,415 Z"  fill="#0a3d52" opacity="0.9"/>
+  <path d="M340,415 L340,635 A220,220 0 0,1 120,415 Z"  fill="#083444" opacity="0.9"/>
+  <path d="M340,415 L340,635 A220,220 0 0,0 560,415 Z"  fill="#062c3a" opacity="0.9"/>
+
+  <!-- Ring layers -->
+  <circle cx="340" cy="415" r="155" fill="none" stroke="#06b6d4" stroke-width="0.8" opacity="0.25"/>
+  <circle cx="340" cy="415" r="88"  fill="none" stroke="#06b6d4" stroke-width="0.8" opacity="0.25"/>
+  <circle cx="340" cy="415" r="38"  fill="#0f4c5c" opacity="0.9"/>
+
+  <!-- Cross dividers -->
+  <line x1="120" y1="415" x2="560" y2="415" stroke="#06b6d4" stroke-width="1.5" opacity="0.5"/>
+  <line x1="340" y1="195" x2="340" y2="635" stroke="#06b6d4" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="340" cy="415" r="220" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Quadrant labels inside -->
+  <text x="218" y="278" font-size="11" font-weight="700" fill="#a5f3fc" opacity="0.85" transform="rotate(-38,218,278)">Front Office</text>
+  <text x="418" y="272" font-size="11" font-weight="700" fill="#a5f3fc" opacity="0.85" transform="rotate(38,418,272)">Products / Services</text>
+  <text x="175" y="555" font-size="11" font-weight="700" fill="#a5f3fc" opacity="0.85" transform="rotate(38,175,555)">Back Office</text>
+  <text x="415" y="555" font-size="11" font-weight="700" fill="#a5f3fc" opacity="0.85" transform="rotate(-38,415,555)">Core Capabilities</text>
+
+  <!-- Sub-labels inside -->
+  <text x="230" y="315" font-size="8" fill="#67e8f9" opacity="0.6" transform="rotate(-38,230,315)">CX · Agente IA</text>
+  <text x="400" y="308" font-size="8" fill="#67e8f9" opacity="0.6" transform="rotate(38,400,308)">Score API · First Mover</text>
+  <text x="188" y="524" font-size="8" fill="#67e8f9" opacity="0.6" transform="rotate(38,188,524)">RH · BI Interno</text>
+  <text x="398" y="524" font-size="8" fill="#67e8f9" opacity="0.6" transform="rotate(-38,398,524)">ML · Anti-fraude</text>
+
+  <!-- Center label -->
+  <text x="340" y="410" font-size="10" font-weight="800" fill="#06b6d4" text-anchor="middle">AI First</text>
+  <text x="340" y="424" font-size="9"  font-weight="400" fill="#06b6d4" text-anchor="middle">Everywhere</text>
+
+  <!-- Axis labels -->
+  <text x="340" y="185" font-size="10" font-weight="600" fill="#94a3b8" text-anchor="middle">Voltado para o Cliente Externo</text>
+  <text x="340" y="650" font-size="10" font-weight="600" fill="#94a3b8" text-anchor="middle">Operações Internas</text>
+  <text x="108" y="413" font-size="9" fill="#64748b" text-anchor="middle">IA do</text>
+  <text x="108" y="424" font-size="9" fill="#64748b" text-anchor="middle">Dia a Dia</text>
+  <text x="573" y="410" font-size="9" fill="#64748b" text-anchor="middle">IA</text>
+  <text x="573" y="421" font-size="9" fill="#64748b" text-anchor="middle">Transformadora</text>
+
+  <!-- Dots in quadrants -->
+  <circle cx="258" cy="312" r="9" fill="#06b6d4" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="422" cy="308" r="9" fill="#3b82f6" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="252" cy="512" r="9" fill="#22d3ee" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="425" cy="516" r="9" fill="#8b5cf6" filter="url(#glow)" opacity="0.9"/>
+
+  <!-- ── 4 CARDS (right side) ── -->
+
+  <!-- CARD 1 — Front Office -->
+  <rect x="618" y="170" width="288" height="148" rx="10" fill="#0f1f35" stroke="#06b6d4" stroke-width="1.2" filter="url(#cardSh)"/>
+  <rect x="618" y="170" width="288" height="5"   rx="3"  fill="#06b6d4"/>
+  <!-- icon circle -->
+  <circle cx="641" cy="194" r="12" fill="#06b6d4" opacity="0.15"/>
+  <text x="641" y="198" font-size="12" fill="#06b6d4" text-anchor="middle">⚡</text>
+  <text x="660" y="196" font-size="12" font-weight="700" fill="#e2e8f0">Front Office</text>
+  <text x="660" y="208" font-size="9"  fill="#475569">Voltado para o Cliente</text>
+  <line x1="630" y1="216" x2="894" y2="216" stroke="#1e3a5f" stroke-width="1"/>
+  <text font-size="10" fill="#cbd5e1">
+    <tspan x="630" dy="0" y="232">→ Fluxo de caixa inteligente com Agente de IA</tspan>
+    <tspan x="630" dy="15">→ Dashboard financeiro personalizado</tspan>
+    <tspan x="630" dy="15">→ Alertas proativos de inadimplência</tspan>
+    <tspan x="630" dy="15">→ Onboarding conversacional (WhatsApp/app)</tspan>
+    <tspan x="630" dy="15">→ NPS ≥ 70 · 30% melhora no score</tspan>
+  </text>
+
+  <!-- CARD 2 — Products/Services -->
+  <rect x="930" y="170" width="314" height="148" rx="10" fill="#0f1f35" stroke="#3b82f6" stroke-width="1.2" filter="url(#cardSh)"/>
+  <rect x="930" y="170" width="314" height="5"   rx="3"  fill="#3b82f6"/>
+  <circle cx="953" cy="194" r="12" fill="#3b82f6" opacity="0.15"/>
+  <text x="953" y="198" font-size="12" fill="#3b82f6" text-anchor="middle">🚀</text>
+  <text x="972" y="196" font-size="12" font-weight="700" fill="#e2e8f0">Products / Services</text>
+  <text x="972" y="208" font-size="9"  fill="#475569">IA Transformadora · First Mover</text>
+  <line x1="942" y1="216" x2="1232" y2="216" stroke="#1e3a5f" stroke-width="1"/>
+  <text font-size="10" fill="#cbd5e1">
+    <tspan x="942" dy="0" y="232">→ Score híbrido PF+PJ como produto de IA (API)</tspan>
+    <tspan x="942" dy="15">→ Assinatura · Consulta de dívidas ativas</tspan>
+    <tspan x="942" dy="15">→ BI-Report diário via IA generativa</tspan>
+    <tspan x="942" dy="15">→ Pioneiro em Crédito Híbrido — Gini ≥ 0,45</tspan>
+    <tspan x="942" dy="15">→ Meta: 3M jornadas · MRR R$ 500k (2028)</tspan>
+  </text>
+
+  <!-- CARD 3 — Back Office -->
+  <rect x="618" y="340" width="288" height="148" rx="10" fill="#0f1f35" stroke="#22d3ee" stroke-width="1.2" filter="url(#cardSh)"/>
+  <rect x="618" y="340" width="288" height="5"   rx="3"  fill="#22d3ee"/>
+  <circle cx="641" cy="364" r="12" fill="#22d3ee" opacity="0.15"/>
+  <text x="641" y="368" font-size="12" fill="#22d3ee" text-anchor="middle">⚙</text>
+  <text x="660" y="366" font-size="12" font-weight="700" fill="#e2e8f0">Back Office</text>
+  <text x="660" y="378" font-size="9"  fill="#475569">Produtividade e Eficiência Interna</text>
+  <line x1="630" y1="386" x2="894" y2="386" stroke="#1e3a5f" stroke-width="1"/>
+  <text font-size="10" fill="#cbd5e1">
+    <tspan x="630" dy="0" y="402">→ RH: contratação e avaliação com IA</tspan>
+    <tspan x="630" dy="15">→ Produtividade monitorada por IA</tspan>
+    <tspan x="630" dy="15">→ BI interno: relatórios diários automáticos</tspan>
+    <tspan x="630" dy="15">→ Humano foca em decisão, IA na operação</tspan>
+    <tspan x="630" dy="15">→ Redução SG&amp;A via automação de processos</tspan>
+  </text>
+
+  <!-- CARD 4 — Core Capabilities -->
+  <rect x="930" y="340" width="314" height="148" rx="10" fill="#0f1f35" stroke="#8b5cf6" stroke-width="1.2" filter="url(#cardSh)"/>
+  <rect x="930" y="340" width="314" height="5"   rx="3"  fill="#8b5cf6"/>
+  <circle cx="953" cy="364" r="12" fill="#8b5cf6" opacity="0.15"/>
+  <text x="953" y="368" font-size="12" fill="#8b5cf6" text-anchor="middle">🔒</text>
+  <text x="972" y="366" font-size="12" font-weight="700" fill="#e2e8f0">Core Capabilities</text>
+  <text x="972" y="378" font-size="9"  fill="#475569">Trust Layer · Infraestrutura de IA</text>
+  <line x1="942" y1="386" x2="1232" y2="386" stroke="#1e3a5f" stroke-width="1"/>
+  <text font-size="10" fill="#cbd5e1">
+    <tspan x="942" dy="0" y="402">→ Score híbrido PF+PJ — Trust Layer nacional</tspan>
+    <tspan x="942" dy="15">→ Anti-fraude com ML auditável (LGPD)</tspan>
+    <tspan x="942" dy="15">→ Liberação e limite de crédito automatizados</tspan>
+    <tspan x="942" dy="15">→ Motor explicável: CMN 4.557 + regulatório</tspan>
+    <tspan x="942" dy="15">→ Score comportamental setorial (saúde)</tspan>
+  </text>
+
+  <!-- ── 3 DIMENSIONS STRIP ── -->
+  <rect x="618" y="510" width="626" height="80" rx="10" fill="#080f1e" stroke="#1e3a5f" stroke-width="1"/>
+
+  <!-- dim 1 -->
+  <text x="730" y="534" font-size="10" font-weight="700" fill="#06b6d4" text-anchor="middle">O QUÊ (Opportunity)</text>
+  <text x="730" y="550" font-size="9.5" fill="#94a3b8" text-anchor="middle">6M profissionais · Open Finance + ML</text>
+  <text x="730" y="564" font-size="9.5" fill="#94a3b8" text-anchor="middle">Crédito inclusivo no setor saúde</text>
+  <line x1="824" y1="516" x2="824" y2="582" stroke="#1e3a5f" stroke-width="1"/>
+
+  <!-- dim 2 -->
+  <text x="930" y="534" font-size="10" font-weight="700" fill="#3b82f6" text-anchor="middle">O COMO (Implementation)</text>
+  <text x="930" y="550" font-size="9.5" fill="#94a3b8" text-anchor="middle">Score API B2B2C · fintechs · BaaS</text>
+  <text x="930" y="564" font-size="9.5" fill="#94a3b8" text-anchor="middle">Assinatura · BI-Report · Gestão</text>
+  <line x1="1035" y1="516" x2="1035" y2="582" stroke="#1e3a5f" stroke-width="1"/>
+
+  <!-- dim 3 -->
+  <text x="1152" y="534" font-size="10" font-weight="700" fill="#8b5cf6" text-anchor="middle">O QUÃO LONGE (Risk)</text>
+  <text x="1152" y="550" font-size="9.5" fill="#94a3b8" text-anchor="middle">IA decide score · humano valida</text>
+  <text x="1152" y="564" font-size="9.5" fill="#94a3b8" text-anchor="middle">LGPD · CMN 4.557 · regulatório</text>
+
+  <!-- ── FOOTER ── -->
+  <line x1="0" y1="608" x2="1280" y2="608" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="64"   y="632" font-size="10" fill="#334155">Hibryd · Score Híbrido PF+PJ · Open Finance · ML Auditável · Agente IA Financeiro · Crédito Proativo</text>
+  <text x="64"   y="650" font-size="9"  fill="#1e3a5f">Não concede crédito diretamente · Sem acesso a dados sem consentimento · Foco saúde até 2028</text>
+  <text x="1216" y="650" font-size="9"  fill="#334155" text-anchor="end">Fonte: Gartner AI Ambition Radar</text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="716" width="1280" height="4" fill="url(#accentLine)"/>
+</svg>

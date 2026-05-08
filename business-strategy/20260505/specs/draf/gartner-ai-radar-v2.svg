@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 720" width="1060" height="720" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <radialGradient id="rg1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#e0f7fa"/>
+      <stop offset="40%" stop-color="#80deea"/>
+      <stop offset="75%" stop-color="#26c6da"/>
+      <stop offset="100%" stop-color="#00838f"/>
+    </radialGradient>
+
+    <!-- clip each quadrant -->
+    <clipPath id="cTL"><rect x="180" y="130" width="270" height="270"/></clipPath>
+    <clipPath id="cTR"><rect x="450" y="130" width="270" height="270"/></clipPath>
+    <clipPath id="cBL"><rect x="180" y="400" width="270" height="270"/></clipPath>
+    <clipPath id="cBR"><rect x="450" y="400" width="270" height="270"/></clipPath>
+
+    <!-- arc paths for curved text -->
+    <path id="aTL" d="M 325,198 A 137,137 0 0,1 460,260"/>
+    <path id="aTR" d="M 440,198 A 137,137 0 0,0 305,260"/>
+    <path id="aBL" d="M 325,522 A 137,137 0 0,0 460,460"/>
+    <path id="aBR" d="M 440,522 A 137,137 0 0,1 305,460"/>
+
+    <path id="aTL2" d="M 340,215 A 118,118 0 0,1 448,270"/>
+    <path id="aTR2" d="M 460,215 A 118,118 0 0,0 352,270"/>
+    <path id="aBL2" d="M 340,505 A 118,118 0 0,0 448,450"/>
+    <path id="aBR2" d="M 460,505 A 118,118 0 0,1 352,450"/>
+  </defs>
+
+  <!-- WHITE BACKGROUND -->
+  <rect width="1060" height="720" fill="#ffffff"/>
+
+  <!-- TITLE -->
+  <text x="530" y="46" font-size="26" font-weight="800" fill="#1a1a2e" text-anchor="middle">Radar de Ambição de IA da Gartner</text>
+  <text x="530" y="68" font-size="13" fill="#64748b" text-anchor="middle">Hibryd · Arquétipo: AI First / Everywhere · Setor: Saúde &amp; Crédito</text>
+
+  <!-- ========== RADAR CIRCLE ========== -->
+  <!-- Outer fill — full circle teal gradient -->
+  <circle cx="450" cy="390" r="240" fill="#b2ebf2"/>
+
+  <!-- Quadrant colors -->
+  <!-- TL: Front Office — lighter teal -->
+  <path d="M450,390 L450,150 A240,240 0 0,0 210,390 Z" fill="#80deea"/>
+  <!-- TR: Products — darker teal/cyan -->
+  <path d="M450,390 L450,150 A240,240 0 0,1 690,390 Z" fill="#26c6da"/>
+  <!-- BL: Back Office — medium teal -->
+  <path d="M450,390 L450,630 A240,240 0 0,1 210,390 Z" fill="#4dd0e1"/>
+  <!-- BR: Core Capabilities — deep teal -->
+  <path d="M450,390 L450,630 A240,240 0 0,0 690,390 Z" fill="#00acc1"/>
+
+  <!-- Inner ring (lighter) -->
+  <circle cx="450" cy="390" r="165" fill="#b2ebf2" opacity="0.55"/>
+
+  <!-- Innermost ring -->
+  <circle cx="450" cy="390" r="90" fill="#e0f7fa" opacity="0.7"/>
+
+  <!-- Center circle -->
+  <circle cx="450" cy="390" r="38" fill="#ffffff" opacity="0.85"/>
+
+  <!-- Cross dividers -->
+  <line x1="210" y1="390" x2="690" y2="390" stroke="#ffffff" stroke-width="2.5" opacity="0.9"/>
+  <line x1="450" y1="150" x2="450" y2="630" stroke="#ffffff" stroke-width="2.5" opacity="0.9"/>
+
+  <!-- Outer circle border -->
+  <circle cx="450" cy="390" r="240" fill="none" stroke="#006064" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="450" cy="390" r="165" fill="none" stroke="#006064" stroke-width="1" opacity="0.3"/>
+  <circle cx="450" cy="390" r="90"  fill="none" stroke="#006064" stroke-width="1" opacity="0.3"/>
+
+  <!-- ========== CURVED LABELS INSIDE CIRCLE ========== -->
+
+  <!-- Front Office (TL) -->
+  <text font-size="12" font-weight="700" fill="#004d40" opacity="0.85">
+    <textPath href="#aTL" startOffset="18%">Front  Office</textPath>
+  </text>
+  <text font-size="9.5" fill="#004d40" opacity="0.7">
+    <textPath href="#aTL2" startOffset="5%">CX · Serviços · Customer Service</textPath>
+  </text>
+
+  <!-- Products/Services (TR) -->
+  <text font-size="12" font-weight="700" fill="#004d40" opacity="0.85">
+    <textPath href="#aTR" startOffset="10%">Products / Services</textPath>
+  </text>
+  <text font-size="9.5" fill="#004d40" opacity="0.7">
+    <textPath href="#aTR2" startOffset="2%">AI-enhanced · New Business Model</textPath>
+  </text>
+
+  <!-- Back Office (BL) -->
+  <text font-size="12" font-weight="700" fill="#004d40" opacity="0.85">
+    <textPath href="#aBL" startOffset="18%">Back  Office</textPath>
+  </text>
+  <text font-size="9.5" fill="#004d40" opacity="0.7">
+    <textPath href="#aBL2" startOffset="5%">Admin · People · Finance · IT</textPath>
+  </text>
+
+  <!-- Core Capabilities (BR) -->
+  <text font-size="12" font-weight="700" fill="#004d40" opacity="0.85">
+    <textPath href="#aBR" startOffset="8%">Core  Capabilities</textPath>
+  </text>
+  <text font-size="9.5" fill="#004d40" opacity="0.7">
+    <textPath href="#aBR2" startOffset="2%">R&amp;D · Supply Chain · Operations</textPath>
+  </text>
+
+  <!-- ========== AXIS LABELS ========== -->
+  <text x="450" y="136" font-size="12" font-weight="600" fill="#37474f" text-anchor="middle">Voltado para o Cliente Externo</text>
+  <text x="450" y="648" font-size="12" font-weight="600" fill="#37474f" text-anchor="middle">Operações Internas</text>
+
+  <!-- Left arrow label -->
+  <text x="148" y="384" font-size="10" fill="#546e7a" text-anchor="middle">IA do</text>
+  <text x="148" y="397" font-size="10" fill="#546e7a" text-anchor="middle">Dia a Dia</text>
+  <line x1="163" y1="390" x2="208" y2="390" stroke="#546e7a" stroke-width="1" marker-end="url(#arr)"/>
+
+  <!-- Right arrow label -->
+  <text x="752" y="381" font-size="10" fill="#546e7a" text-anchor="middle">IA Transformadora</text>
+  <text x="752" y="394" font-size="10" fill="#546e7a" text-anchor="middle">(Game Changing AI)</text>
+  <line x1="693" y1="390" x2="718" y2="390" stroke="#546e7a" stroke-width="1"/>
+
+  <!-- ========== CENTER ========== -->
+  <text x="450" y="385" font-size="10" font-weight="700" fill="#00695c" text-anchor="middle">AI First</text>
+  <text x="450" y="399" font-size="9" fill="#00695c" text-anchor="middle">Everywhere</text>
+
+  <!-- ========== LEFT BOX: Front Office ========== -->
+  <rect x="8" y="112" width="188" height="200" rx="8" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1.5"/>
+  <rect x="8" y="112" width="188" height="5" rx="3" fill="#00897b"/>
+
+  <text x="18" y="132" font-size="11" font-weight="700" fill="#004d40">Excelência em Vendas,</text>
+  <text x="18" y="146" font-size="11" font-weight="700" fill="#004d40">Experiência do Profissional:</text>
+
+  <circle cx="18" cy="163" r="3" fill="#00897b"/>
+  <text x="27" y="167" font-size="10.5" fill="#263238">Fluxo de caixa com</text>
+  <text x="27" y="180" font-size="10.5" fill="#263238">Agente de IA</text>
+
+  <circle cx="18" cy="196" r="3" fill="#00897b"/>
+  <text x="27" y="200" font-size="10.5" fill="#263238">Dashboard financeiro</text>
+  <text x="27" y="213" font-size="10.5" fill="#263238">personalizado</text>
+
+  <circle cx="18" cy="228" r="3" fill="#00897b"/>
+  <text x="27" y="232" font-size="10.5" fill="#263238">Alerta proativo de</text>
+  <text x="27" y="245" font-size="10.5" fill="#263238">inadimplência</text>
+
+  <circle cx="18" cy="261" r="3" fill="#00897b"/>
+  <text x="27" y="265" font-size="10.5" fill="#263238">Onboarding digital</text>
+  <text x="27" y="278" font-size="10.5" fill="#263238">com IA conversacional</text>
+
+  <line x1="196" y1="212" x2="280" y2="295" stroke="#00897b" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+
+  <!-- ========== LEFT BOX: Back Office ========== -->
+  <rect x="8" y="430" width="188" height="195" rx="8" fill="#e0f7fa" stroke="#80deea" stroke-width="1.5"/>
+  <rect x="8" y="430" width="188" height="5" rx="3" fill="#0097a7"/>
+
+  <text x="18" y="450" font-size="11" font-weight="700" fill="#006064">Produtividade e Eficiência</text>
+  <text x="18" y="464" font-size="11" font-weight="700" fill="#006064">no Back Office:</text>
+
+  <circle cx="18" cy="481" r="3" fill="#0097a7"/>
+  <text x="27" y="485" font-size="10.5" fill="#263238">RH: contratação</text>
+  <text x="27" y="498" font-size="10.5" fill="#263238">automatizada com IA</text>
+
+  <circle cx="18" cy="513" r="3" fill="#0097a7"/>
+  <text x="27" y="517" font-size="10.5" fill="#263238">Avaliação de clientes</text>
+  <text x="27" y="530" font-size="10.5" fill="#263238">e produtividade</text>
+
+  <circle cx="18" cy="545" r="3" fill="#0097a7"/>
+  <text x="27" y="549" font-size="10.5" fill="#263238">BI interno: relatórios</text>
+  <text x="27" y="562" font-size="10.5" fill="#263238">diários automatizados</text>
+
+  <circle cx="18" cy="577" r="3" fill="#0097a7"/>
+  <text x="27" y="581" font-size="10.5" fill="#263238">Monitoramento de</text>
+  <text x="27" y="594" font-size="10.5" fill="#263238">performance operacional</text>
+
+  <line x1="196" y1="510" x2="278" y2="475" stroke="#0097a7" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+
+  <!-- ========== RIGHT BOX: Products / Services ========== -->
+  <rect x="864" y="112" width="188" height="210" rx="8" fill="#e0f2f1" stroke="#80cbc4" stroke-width="1.5"/>
+  <rect x="864" y="112" width="188" height="5" rx="3" fill="#00695c"/>
+
+  <text x="874" y="132" font-size="11" font-weight="700" fill="#004d40">Novas Propostas de Valor —</text>
+  <text x="874" y="146" font-size="11" font-weight="700" fill="#004d40">Novos Modelos de Negócio:</text>
+
+  <circle cx="874" cy="163" r="3" fill="#00695c"/>
+  <text x="883" y="167" font-size="10.5" fill="#263238">Assinatura de score</text>
+  <text x="883" y="180" font-size="10.5" fill="#263238">híbrido (API SaaS)</text>
+
+  <circle cx="874" cy="196" r="3" fill="#00695c"/>
+  <text x="883" y="200" font-size="10.5" fill="#263238">Consulta de dívidas</text>
+  <text x="883" y="213" font-size="10.5" fill="#263238">ativas integrada</text>
+
+  <circle cx="874" cy="229" r="3" fill="#00695c"/>
+  <text x="883" y="233" font-size="10.5" fill="#263238">IA como BI-Report</text>
+  <text x="883" y="246" font-size="10.5" fill="#263238">diário para gestão</text>
+
+  <circle cx="874" cy="262" r="3" fill="#00695c"/>
+  <text x="883" y="266" font-size="10.5" fill="#263238">Pioneiro em Crédito</text>
+  <text x="883" y="279" font-size="10.5" fill="#263238">Híbrido — First Mover</text>
+
+  <circle cx="874" cy="295" r="3" fill="#00695c"/>
+  <text x="883" y="299" font-size="10.5" fill="#263238">Vantagem de</text>
+  <text x="883" y="312" font-size="10.5" fill="#263238">Pioneirismo (First Mover)</text>
+
+  <line x1="864" y1="225" x2="626" y2="295" stroke="#00695c" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+
+  <!-- ========== RIGHT BOX: Core Capabilities ========== -->
+  <rect x="864" y="432" width="188" height="195" rx="8" fill="#e0f7fa" stroke="#80deea" stroke-width="1.5"/>
+  <rect x="864" y="432" width="188" height="5" rx="3" fill="#00838f"/>
+
+  <text x="874" y="452" font-size="11" font-weight="700" fill="#006064">Inovação em Estratégia</text>
+  <text x="874" y="466" font-size="11" font-weight="700" fill="#006064">e Operações Chave:</text>
+
+  <circle cx="874" cy="483" r="3" fill="#00838f"/>
+  <text x="883" y="487" font-size="10.5" fill="#263238">Score híbrido PF+PJ</text>
+  <text x="883" y="500" font-size="10.5" fill="#263238">— Trust Layer</text>
+
+  <circle cx="874" cy="515" r="3" fill="#00838f"/>
+  <text x="883" y="519" font-size="10.5" fill="#263238">Anti-fraude com ML</text>
+  <text x="883" y="532" font-size="10.5" fill="#263238">auditável (LGPD)</text>
+
+  <circle cx="874" cy="547" r="3" fill="#00838f"/>
+  <text x="883" y="551" font-size="10.5" fill="#263238">Liberação de crédito</text>
+  <text x="883" y="564" font-size="10.5" fill="#263238">automatizada + limites</text>
+
+  <circle cx="874" cy="579" r="3" fill="#00838f"/>
+  <text x="883" y="583" font-size="10.5" fill="#263238">Propriedade intelectual:</text>
+  <text x="883" y="596" font-size="10.5" fill="#263238">score comportamental</text>
+
+  <line x1="864" y1="510" x2="628" y2="475" stroke="#00838f" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+
+  <!-- ========== BOTTOM KPI STRIP ========== -->
+  <rect x="8" y="662" width="1044" height="50" rx="8" fill="#f1f8e9" stroke="#c5e1a5" stroke-width="1"/>
+
+  <!-- KPI 1 -->
+  <text x="130" y="681" font-size="10" font-weight="700" fill="#33691e" text-anchor="middle">O QUÊ (Opportunity)</text>
+  <text x="130" y="695" font-size="9.5" fill="#37474f" text-anchor="middle">6M profissionais · Open Finance + ML</text>
+  <text x="130" y="707" font-size="9.5" fill="#37474f" text-anchor="middle">Crédito inclusivo setor saúde</text>
+
+  <line x1="268" y1="665" x2="268" y2="710" stroke="#aed581" stroke-width="1"/>
+
+  <!-- KPI 2 -->
+  <text x="452" y="681" font-size="10" font-weight="700" fill="#33691e" text-anchor="middle">O COMO (Implementation)</text>
+  <text x="452" y="695" font-size="9.5" fill="#37474f" text-anchor="middle">Score API (B2B2C) · fintechs · BaaS · apps médicos</text>
+  <text x="452" y="707" font-size="9.5" fill="#37474f" text-anchor="middle">Assinatura · Consulta · BI-Report</text>
+
+  <line x1="634" y1="665" x2="634" y2="710" stroke="#aed581" stroke-width="1"/>
+
+  <!-- KPI 3 -->
+  <text x="840" y="681" font-size="10" font-weight="700" fill="#33691e" text-anchor="middle">O QUÃO LONGE (Risk)</text>
+  <text x="840" y="695" font-size="9.5" fill="#37474f" text-anchor="middle">IA decide score · humano valida edge cases</text>
+  <text x="840" y="707" font-size="9.5" fill="#37474f" text-anchor="middle">CMN 4.557 · LGPD · risco regulatório monitorado</text>
+
+  <!-- Gartner badge -->
+  <text x="1052" y="716" font-size="9" fill="#90a4ae" text-anchor="end">Fonte: Gartner   Aplicado: Hibryd 2026</text>
+</svg>
